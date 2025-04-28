@@ -1,9 +1,10 @@
 import { assets, workData } from '@/assests/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from "motion/react"
 
 const Work = ({isDarkMode}) => {
+  const [showMore, setShowMore] = useState(false)
   return (
     <motion.div 
     initial={{opacity: 0}}
@@ -28,19 +29,27 @@ const Work = ({isDarkMode}) => {
       transition={{duration: 0.5, delay: 0.7}}
       className='text-center mx-auto mt-5 mb-12 font-ovo max-w-2xl'>
         Welcome to my web development portfolio! Explore a collection of projects showcasing
-        my expertise in front-end development.
+        my expertise in full-stack development.
       </motion.p>
 
       <motion.div 
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 0.6, delay: 0.9}}
-      className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-5 my-10 dark:text-black'>
-        {workData.map((project, index) => (
+      className='grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-5 my-10 dark:text-black'>
+        {workData.slice(0, showMore ? workData.length : 3).map((project, index) => (
             <motion.div 
             whileHover={{scale: 1.05}}
             transition={{duration: 0.3}}
-            className='bg-no-repeat bg-cover aspect-square bg-center rounded-lg relative cursor-pointer group' key={index} style={{background: `url(${project.bgImage})`}}>
+            onClick={() => window.open(project.link, '_blank')}
+            className='h-60 rounded-lg relative cursor-pointer group' key={index} >
+
+            <Image 
+                    src={project.bgImage}
+                    alt={project.title}
+                    fill 
+                    className="object-cover rounded-lg"
+                  />
                 <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
                     <div>
                         <h3 className='font-semibold'>{project.title}</h3>
@@ -54,13 +63,14 @@ const Work = ({isDarkMode}) => {
         ))}
       </motion.div>
 
-      <motion.a 
+      <motion.button 
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
+      onClick={() => setShowMore(prev => !prev)}
       transition={{duration: 0.5, delay: 1.1}}
-      href='' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:hover:bg-darkHover dark:text-white dark:border-white'>
-        Show more <Image src={isDarkMode? assets.right_arrow_bold_dark :assets.right_arrow_bold} alt='right arrow' className='w-4'/>
-      </motion.a>
+      className='w-max cursor-pointer flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:hover:bg-darkHover dark:text-white dark:border-white'>
+        Show {showMore ? 'less' : 'more'} <Image src={isDarkMode? assets.right_arrow_bold_dark :assets.right_arrow_bold} alt='right arrow' className='w-4'/>
+      </motion.button>
     </motion.div>
   )
 }

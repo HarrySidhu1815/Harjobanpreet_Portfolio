@@ -26,8 +26,8 @@ const Services = () => {
       whileInView={{opacity: 1}}
       transition={{duration: 0.5, delay: 0.7}}
       className='text-center mx-auto mt-5 mb-12 font-ovo max-w-2xl'>
-      I am a frontend developer from California, USA with 10 years of experience in multiple 
-      companies like Microsoft, Tesla and Apple.
+      I am a full stack developer from Abbotsford, Canada with 4 years of experience in multiple 
+      areas like MERN stack, AI, and Data Analysis.
       </motion.p>
 
       <motion.div 

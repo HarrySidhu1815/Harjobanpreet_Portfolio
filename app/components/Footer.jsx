@@ -17,9 +17,9 @@ const Footer = ({isDarkMode}) => {
       <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6'>
         <p>© 2025 William Mark. All rights reserved.</p>
         <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-            <li><a target='_blank' href=''>GitHub</a></li>
-            <li><a target='_blank' href=''>LinkedIn</a></li>
-            <li><a target='_blank' href=''>Instagram</a></li>
+            <li><a target='_blank' href='https://github.com/HarrySidhu1815'>GitHub</a></li>
+            <li><a target='_blank' href='https://www.linkedin.com/in/harjobanpreet-singh-sidhu-13b80525b/'>LinkedIn</a></li>
+            <li><a target='_blank' href='https://www.instagram.com/harry_._sidhu/?next=%2F'>Instagram</a></li>
         </ul>
       </div>
     </div>

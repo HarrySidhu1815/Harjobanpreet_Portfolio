@@ -33,14 +33,14 @@ const About = ({isDarkMode}) => {
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 0.8}}
         className='w-64 sm:w-80 rounded-3xl max-w-none'>
-            <Image className='w-full rounded-3xl' src={assets.user_image} alt='user' />
+            <Image className='w-full rounded-3xl bg-gray-200' src={assets.user_image} alt='user' />
         </motion.div>
         <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.8}}
         className='flex-1'>
-            <p className='mb-10 max-w-2xl font-ovo'>I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+            <p className='mb-10 max-w-2xl font-ovo'>I am an experienced Full-stack Developer with over 4 years of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
             
             <motion.ul 
             initial={{opacity: 0}}

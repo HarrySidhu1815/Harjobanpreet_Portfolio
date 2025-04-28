@@ -8,7 +8,7 @@ import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
-import git from './git.png';
+import git from './github.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
@@ -35,6 +35,10 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import postman from './postman.svg'
+import selenium from './Selenium.png'
+import nodejs from './node.png'
+import sql from './sql.png'
 
 export const assets = {
     user_image,
@@ -73,45 +77,89 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    postman,
+    selenium,
+    nodejs,
+    sql,
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'VidTube',
+        description: 'YouTube Clone',
         bgImage: '/work-1.png',
+        link: 'https://youtube-clone-pi-silk.vercel.app'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'LLM Model',
+        description: 'Deepseek-clone',
+        bgImage: '/work-2.jpeg',
+        link: 'https://deepseek-clone-mauve.vercel.app'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Learning with Seabird',
+        description: 'A learning platform',
+        bgImage: '/work-3.jpeg',
+        link: 'https://api.learningwithseabird.ca'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Forever Shopping',
+        description: 'E-commerce website',
         bgImage: '/work-4.png',
+        link: 'https://e-commerce-frontend-opal-chi.vercel.app'
+    },
+    {
+        title: 'React Quiz',
+        description: 'Frontend Quiz app',
+        bgImage: '/work-5.jpeg',
+        link: 'https://sidhureactquiz.netlify.app'
+    },
+    {
+        title: 'Elegant Context',
+        description: 'Clothes buying app',
+        bgImage: '/work-6.jpeg',
+        link: 'https://sidhushoppingcart.netlify.app'
+    },
+    {
+        title: 'Place Picker',
+        description: 'Pick your nearest destination',
+        bgImage: '/work-7.jpeg',
+        link: 'https://sidhuplacepicker.netlify.app'
+    },
+    {
+        title: 'ToDo Application',
+        description: 'Project Manager App',
+        bgImage: '/work-8.jpeg',
+        link: 'https://sidhutaskmanagement.netlify.app'
+    },
+    {
+        title: 'CountDown App',
+        description: 'Using Framer motion',
+        bgImage: '/work-9.jpeg',
+        link: 'https://sidhucounterincrement.netlify.app'
+    },
+    {
+        title: 'Movie Finder',
+        description: 'Netflix movie finder',
+        bgImage: '/work-10.jpeg',
+        link: 'https://search-engine-movies.vercel.app'
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web Development', description: 'Web development is the process of building, programming...', link: 'https://brainstation.io/career-guides/what-is-web-development' },
+    { icon: assets.mobile_icon, title: 'Data Analysis/Scientist', description: 'Data Analysis/Scientist involves analyzing the data to...', link: 'https://www.datacamp.com/blog/what-is-data-analysis-expert-guide#' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: 'https://flatironschool.com/blog/what-is-ux-ui-design/' },
+    { icon: assets.graphics_icon, title: 'Software Development', description: 'Software development is the process of building, programming...', link: 'https://www.ibm.com/think/topics/software-development' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'MERN, C++, Java, Pyhton, React Js, Next Js' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BCIS majors in Software Development' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 20 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git, assets.postman, assets.selenium, assets.nodejs, assets.sql
 ];
