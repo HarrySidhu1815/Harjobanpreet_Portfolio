@@ -38,7 +38,7 @@ const Header = () => {
         initial={{y: 30, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
         transition={{duration: 0.6, delay: 1.2}}
-        className='flex gap-2 items-center px-10 py-3 rounded-full border border-gray-500 bg-white dark:text-black' href='/sample-resume.pdf' download>my resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
+        className='flex gap-2 items-center px-10 py-3 rounded-full border border-gray-500 bg-white dark:text-black' href='/Resume_Harjobanpreet_25.pdf' download>my resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
       </div>
     </div>
   )
