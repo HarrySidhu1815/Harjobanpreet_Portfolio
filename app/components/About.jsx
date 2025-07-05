@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.8}}
-        className='flex-1'>
+        className='flex-1 w-full'>
             <p className='mb-10 max-w-2xl font-ovo'>I am an experienced Full-stack Developer with over 4 years of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
             
             <motion.ul 
