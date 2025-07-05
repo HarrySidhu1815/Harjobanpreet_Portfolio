@@ -42,7 +42,7 @@ const Work = ({isDarkMode}) => {
             whileHover={{scale: 1.05}}
             transition={{duration: 0.3}}
             onClick={() => window.open(project.link, '_blank')}
-            className='h-60 rounded-lg relative cursor-pointer group' key={index} >
+            className='h-50 rounded-lg relative cursor-pointer group' key={index} >
 
             <Image 
                     src={project.bgImage}
