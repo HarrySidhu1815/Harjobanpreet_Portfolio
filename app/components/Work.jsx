@@ -36,7 +36,7 @@ const Work = ({isDarkMode}) => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 0.6, delay: 0.9}}
-      className='grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-5 my-10 dark:text-black'>
+      className='grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 my-10 dark:text-black'>
         {workData.slice(0, showMore ? workData.length : 3).map((project, index) => (
             <motion.div 
             whileHover={{scale: 1.05}}
